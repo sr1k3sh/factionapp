@@ -1,0 +1,119 @@
+.home{
+    position: relative;
+    height:100%;
+}
+.home .h-section-1{
+    position: relative;
+}
+.home .h-section-1 .slogan{
+    position: absolute;
+    transform-origin:left;
+    transform: rotate(90deg);
+    left:20%;
+    top:10%;
+}
+.home .h-section-1 .slogan h1{
+    font-size: 100px;
+    letter-spacing: 2px;
+    line-height: 0.7;
+}
+.home .h-section-1 .slogan #sl-1{
+    margin-right: 70px;
+}
+
+.home .h-section-1 .slogan #sl-2{
+    margin-left: 80px;
+}
+.home .h-section-2{
+    position: relative;
+    max-width: 1366px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.home .h-section-2 .flex1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.home .h-section-2 .flex1 h1{
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+}
+.home .h-section-2 .flex2{
+    /* width:50%; */
+    display: flex;
+    padding:20px;
+    flex-direction: column;
+}
+.home .h-section-2 .flex2 p{
+    width:72%;
+    text-align: left;
+    padding:0px 0px 20px 0px;
+}
+.span-button{
+   
+    background: #ff0000;
+    color:#fff;
+    padding:10px 0;
+}
+.home .h-section-4{
+    position: relative;
+    max-width: 1366px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: -5px;
+    /* padding:50px 0px; */
+}
+.home .h-section-4 .flex1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.home .h-section-4 .flex1 .header{
+    font-size:90px;
+   line-height: 0.72;
+   width:150px;
+   font-weight: 700;
+}
+.home .h-section-5{
+    display: grid;
+    grid-template-rows: 0.7fr 1.3fr;
+}
+.home .next-button{
+     position: absolute;
+     right:3%;
+     bottom:1%;
+     width:150px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+.home .next-button .prev{
+    border:2px solid #fff;
+    padding:0px 20px;
+    transform:rotate(-180deg);
+    cursor: pointer;
+}
+.home .next-button .next{
+    border:2px solid #fff;
+    padding:0px 20px;
+    cursor: pointer;
+    /* transform:rotate(-180deg) */
+}
+@media (max-width:1366px){
+    .h-section-1 .slogan h1{
+        font-size: 92px !important;
+    }
+    .h-section-4 .flex1{
+        margin-left:200px;
+    }
+}
